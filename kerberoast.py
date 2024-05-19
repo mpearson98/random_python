@@ -38,7 +38,7 @@ paData.append(paData2)
 # Set the req-body field
 reqBody = seq_set(asReq, 'req-body', False)
 reqBody['kdc-options'] = constants.KDCOptions.forwardable.value | constants.KDCOptions.renewable.value | \
-                         constants.KDCOptions.proxiable.value | constants.KDCOptions.cname_in_pa_data.value
+constants.KDCOptions.proxiable.value | constants.KDCOptions.cname_in_pa_data.value
 
 # Set the other fields of the req-body
 reqBody['cname'] = types.PrincipalName()
